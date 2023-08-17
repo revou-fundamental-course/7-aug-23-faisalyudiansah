@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div class="container">
+
+        <header class="header">
+            <h1>Kalkulator Hitung Luas dan Keliling Segitiga</h1>
+        </header>
+
+        <div class="card">
+            <div id="cardLuas" >
+                <p class="card-text">Menghitung Luas Segitiga</p>
+                <button id="btnLuas">Masuk ke Luas</button>
+            </div>
+            <div id="cardKeliling" >
+                <p class="card-text">Menghitung Keliling Segitiga</p>
+                <button id="btnKeliling">Masuk ke Keliling</button>
+            </div>
+        </div>
+
+        <div id="luasForm" style="display: none">
+            <img src="assets/luas.jpg" alt="Gambar Luas Segitiga" width="250" height="200" />
+            <h2>Luas Segitiga</h2>
+
+            <div class="penjelasanLuas">
+                <p>Rumus luas segitiga yaitu : </p>
+                <p><center><i>L = 1/2 x a x t</i></center></p>
+                <p>Di mana :</p>
+                <p>
+                    <li>L = Luas</li>
+                    <li>a = Panjang Alas</li>
+                    <li>t = Tinggi</li>
+                </p>
+            </div>
+            
+            <div class="input-angka">
+                <label>Panjang Alas Segitiga <i>(a)</i></label>
+                <input type="number" id="alas" />
+            </div>
+            <div class="input-angka">
+                <label>Tinggi Segitiga <i>(t)</i></label>
+                <input type="number" id="tinggi" />
+            </div>
+                <div class="error-message" id="error-message-luas"></div>
+                <button id="hitungLuas">Hitung</button>
+                <button id="resetLuas" onclick="reset()">Reset</button>
+                
+                <div class="show-hasil" >
+                    <div id="resultLuas" style="display: none">
+                        <p>Hasil Hitung</p>
+                        <p id="step1Luas"></p>
+                        <p id="step2Luas"></p>
+                        <p id="step3Luas"></p>
+                        <p id="hasilHitunganLuas"></p>
+                    </div>
+                </div>
+        </div>
+
+        <div id="kelilingForm" style="display: none">
+            <img src="assets/keliling.jpg" alt="Gambar Keliling Segitiga" width="250" height="200" />
+            <h2>Keliling Segitiga</h2>
+
+            <div class="penjelasanKeliling">
+                <p>Rumus keliling segitiga yaitu : </p>
+                <p><center><i>K = S1 + S2 + S3</i></center></p>
+                <p>Di mana :</p>
+                <p>
+                    <li>K = Keliling</li>
+                    <li>S1 = Sisi A</li>
+                    <li>S2 = Sisi B</li>
+                    <li>S3 = Sisi C</li>
+                </p>
+            </div>
+
+            <div class="input-angka">
+                <label>Panjang Sisi A</label>
+                <input type="number" id="sisiA" />
+            </div>
+            <div class="input-angka">
+                <label>Panjang Sisi B</label>
+                <input type="number" id="sisiB" />
+            </div>
+            <div class="input-angka">
+                <label>Panjang Sisi C</label>
+                <input type="number" id="sisiC" />
+            </div>
+            <div class="error-message" id="error-message-keliling"></div>
+                <button id="hitungKeliling">Hitung</button>
+                <button id="resetKeliling" onclick="reset()">Reset</button>
+                
+                <div class="show-hasil" >
+                    <div id="resultKeliling" style="display: none">
+                        <p>Hasil Hitung</p>
+                        <p id="step1Keliling"></p>
+                        <p id="step2Keliling"></p>
+                        <p id="step3Keliling"></p>
+                        <p id="hasilHitunganKeliling"></p>
+                    </div>
+                </div>
+        </div>
+
+</div>
+    <footer id="footer">             
+        <p class="copyright"> Copyright 2023 &copy mfaisal.yudiansah@gmail.com - Muhammad Faisal Yudiansah</p>     
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
