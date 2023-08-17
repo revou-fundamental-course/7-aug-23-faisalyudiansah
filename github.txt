@@ -4,4 +4,5 @@ email : mfaisal.yudiansah@gmail.com
 
 Muhammad Faisal Yudiansah
 
-https://github.com/revou-fundamental-course/7-aug-23-faisalyudiansah.git
+LINK =
+https://revou-fundamental-course.github.io/7-aug-23-faisalyudiansah/
